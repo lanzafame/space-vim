@@ -42,7 +42,7 @@ function! spacevim#layer#status()
     call setline(l:inx, '+ ' . l:layer)
     let l:inx = l:inx + 1
   endfor
-  setlocal buftype=nofile bufhidden=wipe nobuflisted nolist noswapfile nowrap cursorline nomodifiable nospell
+  setlocal buftype=nofile bufhidden=wipe nobuflisted nolist noswapfile nowrap nomodifiable nospell
   setf spacevim
   if exists('g:syntax_on')
     call s:syntax()
